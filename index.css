@@ -1,0 +1,574 @@
+*{
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins';
+  }
+
+  .nav-link {
+    clear: left;
+    z-index: 1;
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #f4f6f8;
+    padding: 20px 0px;
+    margin: 0px 20px;
+    display: inline-block;
+    position: relative;
+    left: 40%;
+
+  }
+
+  .nav-link:hover {
+    opacity: 1;
+  }
+
+  .nav-link::before {
+    transition: 300ms;
+    height: 2px;
+    content: "";
+    position: absolute;
+    background-color: #f9fbfc;
+    border-radius: 10px;
+  }
+  .navbar{
+    transition: all ease-out 0.8s;
+  }
+  .navbar:hover{
+    z-index: 1;
+   background-color: rgba(0, 0, 0, 0.693);
+   color: #f4f6f8;
+
+}
+  .nav-link:hover{
+    color: #fafcfc;
+
+  }
+
+
+  .nav-link-ltr::before {
+    width: 0%;
+    bottom: 10px;
+  }
+
+  .nav-link-ltr:hover::before {
+    width: 100%;
+  }
+
+  .icon{
+    z-index: 1;
+    position: relative;
+    top :30px;
+    left: 10%;
+  }
+  #background-video{
+ opacity: 0.9;
+ height: 900px;
+ width: 100%;
+ position: relative;
+ top:-200px;
+ z-index: -1;
+
+  }
+
+  .wel{
+    position: relative;
+    top: -600px;;
+   right: -10%;
+   width: 50%;
+  }
+
+  .WELCOME-one{
+    color: #000204;
+    font-size: 15px;
+ font-weight: 800;
+  }
+
+  .WELCOME-two{
+    color: #00050a;
+    font-size: 50px;
+    font-weight: 400;
+  }
+
+  .commitment{
+    position: relative;
+    top: -550px;
+    background-image: url("https://www.mastercard.co.in/content/dam/public/mastercardcom/in/en/homepage/Home/homepage_banner2_1300x650.jpg");
+    background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 600px;
+  width: 100%;
+  }
+
+  .subclass{
+    width: 60%;
+  }
+
+  .Our{
+    font-size: 500%;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight:lighter;
+    position: relative;
+    top:100px;
+    left: 100px;
+    color: rgb(0, 0, 0);
+  }
+  .learn{
+    position: relative;
+    font-family:'Poppins';
+    color: rgb(76, 74, 74);
+    font-style:italic;
+    text-decoration: none;
+    padding: 3px 3px 3px 3px;
+    margin: 3px 3px 3px 3px ;
+}
+.learn:hover{
+    height: 50px;
+}
+
+  .this{position: relative;
+    width: 50%;
+    left: 100px;
+    top:50px
+  }
+
+  * {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  background-color: rgb(219, 237, 245);
+  position: relative;
+  top:-500px;
+  max-width: 90%;
+  height: 600px;
+  position: relative;
+  margin: auto;
+  border-radius: 10px;
+
+}
+
+/* Hide the images by default */
+.mySlides {
+
+  display: none;
+}
+
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+#one{
+float:left ;
+padding: 10px 10px 10px 10px;
+height: 600px;
+border-radius: 20px;
+margin: 10px 10px 10px 10px ;
+}
+
+.dot-slider{
+  position: relative;
+  top:-500px;
+}
+.first-info{
+  padding: 10px 10px 10px 10px;
+  margin: 10px 10px 10px 10px;
+  padding-top: 50px
+}
+
+.info1{
+  padding: 10px 10px 10px 10px;
+  margin: 10px 10px 10px 10px;
+  padding-top: 50px;
+  color: gray;
+}
+
+.card{
+  position: relative;
+  top:-500px;
+  height: 600px;
+  width: 100%;
+  background-image: url("https://www.mastercard.co.in/content/dam/public/mastercardcom/in/en/homepage/Home/mastercard-cards-1300x650.jpg");
+  background-size: 100% 100%;
+  width: 100%;
+}
+
+.find{
+  position: relative;
+  color: white;
+  margin: 20px 20px 20xp 20px;
+  padding: 20px 20px 20px 20px ;
+  font-weight:lighter;
+  top:150px;
+  font-size: 60px;
+  left:10%;
+  width: 80%;
+
+}
+
+.get{
+  position: relative;
+  top:150px;
+  left:12.5%;
+  height: 45px;
+  background: #000204;
+  border-radius: 30px;
+  border: #f2f2f2 solid 4px;
+  width: 130px;
+  color: #f4f6f8;
+}
+
+.get:hover{
+   box-shadow:  5px 5px 2px  white;
+}
+
+.main{
+  background-color: rgb(55, 54, 54);
+  padding: 70px 70px 70px 70px;
+  height: 800px;
+  position: relative;
+  top:-500px;
+
+
+}
+
+.temp1{
+float: left;
+padding: 20px 20px 20px 20px ;
+margin:20px 20px 20px 20px  ;
+}
+.second-cont{
+  clear: left;
+  overflow: hidden;
+            margin: 0 auto;
+}
+
+.temp2{
+  float: right;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.temp1{
+  height: 300px;
+   overflow: hidden;
+   transition: height 0.5s ease-in-out;
+}
+.temp1:hover{
+  height: 305px;
+}
+
+.temp2{
+  height: 300px;
+   overflow: hidden;
+   transition: height 0.5s ease-in-out;
+}
+.temp2:hover{
+  height: 305px;
+}
+
+.float{
+  padding-top: 80px;
+  color: white;
+  font-weight: bold;
+}
+
+.float-info{
+  color: white;
+  font-size: 25px;
+}
+
+.slideshow-container1{
+  position: relative;
+  top:-450px;
+  /* background-color: rgb(205, 242, 242); */
+  height: 800px;
+
+}
+
+#one1{
+float: left;
+}
+
+#one12,#one1{
+  clear: left;
+  float: left;
+  padding: 10px 10px 10px 10px ;
+  margin:10px 10px 10px 10px  ;
+  background-origin: 10px;
+}
+
+.myslider1,.myslider2{
+  margin: auto;
+  padding: auto;
+  background-color: rgb(205, 242, 242);
+  height: 600px;
+  padding-top: 40px;
+  border: 30px;
+  width: 95%;
+  position: relative;
+  left: auto;
+  right: auto;
+  border-radius: 20px;
+  opacity: 1;
+  transition: opacity 2s ease-in-out;
+
+}
+
+.myslider2{
+  position: relative;
+  top:-550px;
+}
+
+.myslider1{
+  z-index: 1;
+}
+
+.info11,.info-about1{
+  padding: 20px 20px 20px 20px ;
+  margin: 20px 20px 20px 20px ;
+}
+
+.dot-point{
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  right: auto;
+  left: auto;
+}
+
+
+.active1, .dot-point:hover {
+  background-color: #717171;
+}
+
+
+.this{
+  position: relative;
+  top:-600px;
+}
+
+.display{
+  clear: left;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+ padding-left: 50px;
+ padding-right: 50px;
+ margin-left: 50px;
+ margin-right: 50px;
+
+}
+
+.dis-one,.dis-two,.dis-three{
+
+  height: 450px;
+  width: 300px;
+   background-color: rgb(241, 246, 249);
+   border-radius: 20px;
+   box-shadow: 0px 0px 0px white;
+   transition: box-shadow 0.5s ease-in-out;
+}
+
+.dis-one:hover,.dis-two:hover,.dis-three:hover{
+  box-shadow: 10px 10px 10px gray;
+}
+
+.head{
+  position: relative;
+  top: -550px;
+  font-size: 40px;
+  font-weight: 900;
+  color: rgb(119, 72, 72);
+}
+
+.img1{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 10px 10px 10px;
+  border-radius: 20px;
+  height: 150px;
+  transition: height 0.5s ease-in-out;
+
+}
+
+
+ .img1:hover {
+ height: 160px;
+}
+
+.display{
+  position: relative;
+  top: -650px;
+}
+
+.final{
+  color: gray;
+  text-align: center;
+  padding: 10px 10px 10px 10px;
+  margin: 10px 10px 10px 10px;
+}
+
+.final1{
+  text-align: center;
+  font-size: 20px;
+  padding: 10px 10px 10px 10px;
+  margin: 10px 10px 10px 10px;
+}
+
+.learn{
+  padding: 10px 10px 10px 10px;
+  margin: 10px 10px 10px 10px;
+ border: white solid 1px;
+ border-radius: 10px;
+ background-color: #00050a;
+ color: #f4f6f8;
+ height: 50px;
+ width: 100px;
+ box-shadow: 0px 0px 0px 0px;
+ transition: box-shadow, 0.5s ease-in-out;
+}
+
+.learn:hover{
+  box-shadow:3px 3px 3px #717171;
+  height: 55px;
+  width: 105px;
+}
+
+.footer{
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-gap: 10px;
+ /* padding-left: 50px;
+ padding-right: 50px; */
+ /* margin-left: 50px;
+ margin-right: 50px; */
+ background-color: #202020;
+ height: 500px;
+ margin-top: 0px;
+ padding-top: 0px;
+ position: relative;
+ top: -580px;
+}
+
+.link{
+  color: white;
+  background-color: #050000;
+  height: 100px;
+  position: relative;
+  top: -550px;
+  /* margin: 10px 10px 10px 10px; */
+}
+
+a{
+  text-decoration: none;
+  color: #f4f6f8;
+}
+.a{
+  left: 50px;
+  margin-top: 20px;
+  padding-top: 20px;
+  padding: 10px 10px 10px 10px;
+  margin: 10px 10px 10px 10px;
+}
+
+.footer1,.footer2,.footer3{
+  height: 100px;
+  color: #f2f2f2;
+  padding: 20px 20px 20px 20px;
+  margin: 20px 20px 20px 20px ;
+}
+
+.footer1:hover,.footer2:hover,.footer3:hover{
+  height: 150px;
+}
+
+th{
+  padding: 20px 20px 20px 20px;
+  margin: 20px 20px 20px 20px ;
+  height: 30px;
+}
+.th:hover{
+  font-size: 20px;
+  height: 35px;
+}
+#qaz{
+  z-index: 3;
+  position: fixed;
+  border: 1px solid #cac6c6;
+  top:300px;
+  left: 96.5%;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #929090;
+}
+
+#qwd{
+  z-index: 3;
+  position: fixed;
+  border: 1px solid #cac5c5;
+  top:300px;
+  left: 97%;
+  left: 93%;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #a6a3a3;
+}
+.one1,.one12{
+  opacity: 1;
+}
