@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visionary</title>
+    <link rel="icon" href="./img/apple-touch-icon.png">
+    <link rel="stylesheet" href="/css/style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloock&family=Josefin+Sans&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar" style="background-color: rgba(28, 26, 26, 0.671);">
+        <img class="icon" src="./img/apple-touch-icon.png" height="80px" style="padding: 10px;">
+        <a class="nav-link nav-link-ltr" href="./index3.html">vision for as</a>
+        <a class="nav-link nav-link-ltr" href="./index4.html">vision for business</a>
+        <a class="nav-link nav-link-ltr" href="./index5.html">contact</a>
+        <a class="nav-link nav-link-ltr" href="./index6.html">Visionary</a>
+    </div>
+
+
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+    <div class="container" id="mainContainer">
+        <div class="uploadzone">
+            <div class="wrapper" id="drag-warper">
+                <div class="drag-area" id="drag-area">
+                    <form action="#" id="drag-form">
+                        <input class="file-input" type="file" id="file-input" name="file" hidden multiple>
+                        <i class="fas fa-cloud-upload-alt" id="drag-cloud"></i>
+                        <p id="drag_text">Click Or Drag and Drop File to Upload</p>
+                    </form>
+                    <!-- this is the code for uploading the file -->
+                    <a href="#" class="blue-button" onclick="functionOnClick('open')">Click Me</a>
+                    <section class="progress-area"></section>
+                    <section class="uploaded-area"></section>
+                </div>
+            </div>
+        </div>
+        <div id="snackbar"></div>
+    </div>
+
+    <!-- this is the function for displaying the video -->
+    <div id="videoContainer" class="container" style="width:50%; display: none; ">
+        <video width="400" controls muted>
+            <source src="./WhatsApp Video 2024-01-16 at 1.04.26 AM.mp4"  type="video/mp4">
+            Your browser does not support HTML video.
+        </video>
+        <a href="#" class="blue-button" onclick="functionOnClick('closed')">Closed</a>
+    </div>
+
+    <script src="/js/upload.js"></script>
+    <script>
+        const mainContainer = document.getElementById("mainContainer");
+        const videoContainer = document.getElementById("videoContainer");
+
+        const functionOnClick = (action) => {
+            if (action === "open") {
+                mainContainer.style.display = "none";
+                setTimeout(()=>{
+                    videoContainer.style.display = "block";
+                },2000)
+            } else if (action === "closed") {
+                mainContainer.style.display = "block";
+                videoContainer.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,6 +1,15 @@
 *{
   box-sizing: border-box;
   scroll-behavior: smooth;
+  font-family: 'Poppins';
+}
+
+.navbar{
+  transition: all 0.3s;
+}
+
+.navbar:hover{
+  background-color: #000000bc;
 }
 body {
     padding: 0;
@@ -236,14 +245,14 @@ margin: 10px 10px 10px 10px ;
   top:-500px;
   height: 600px;
   width: 100%;
-  background-image: url("https://www.mastercard.co.in/content/dam/public/mastercardcom/in/en/homepage/Home/mastercard-cards-1300x650.jpg");
+  background-image: url("https://ndhhs.org/wp-content/uploads/2021/07/sign-language-ASL-Classes.jpg");
   background-size: 100% 100%;
   width: 100%;
 }
 
 .find{
   position: relative;
-  color: white;
+  color: rgb(0, 0, 0);
   margin: 20px 20px 20xp 20px;
   padding: 20px 20px 20px 20px ;
   font-weight:lighter;
